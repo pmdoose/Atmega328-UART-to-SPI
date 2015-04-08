@@ -11,6 +11,7 @@ Output to SPI is on exactly 1ms intervals (1000Hz), this will require a recompil
 
 UART is buffered on both input and output.
     Working flow control, on D2 pin. Can be handled by hardware or software if you read the pin value
+    Note RTS was implemted only, does nto currently have a CTS line.
 
 There are a few special commands that may be helpful, these were used in debugging
 These settings are saved to EEPROM, you will need to locate the EEPROM file in the complied directory (release/debug) and have it uploaded to the chip or you will get strange results.
