@@ -7,7 +7,7 @@ Everything is interrupt driven, so there are no synchronous wait times.
 
 SPI output is handled by timer1 as I needed a 16bit counter for it, and other than minor deviations it appears to be highly accurate output.
 Output to SPI is on exactly 1ms intervals (1000Hz), this will require a recompile to adjust.
-    to adjust this you need to set OCR1A to the following. F_CPU/(8*Interval)-1 (Ex. for this project 12000000/(8*1000)
+    to adjust this you need to set OCR1A to the following. F_CPU/(8x*Interval)-1 (Ex. for this project 12000000/(8x1000)
 
 UART is buffered on both input and output.
     Working flow control, on D2 pin. Can be handled by hardware or software if you read the pin value
